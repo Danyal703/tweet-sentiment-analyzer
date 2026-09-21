@@ -1,0 +1,90 @@
+{
+  "training_labels_for_baseline": 45615,
+  "validation_tweets": 2000,
+  "test_tweets": 12284,
+  "selected_threshold": 0.2,
+  "selection_metric": "validation macro F1; fixed grid; smallest threshold breaks ties",
+  "validation_macro_f1": 0.4924378562595446,
+  "test": {
+    "accuracy": 0.5193747964832303,
+    "macro_precision": 0.537334817845262,
+    "macro_recall": 0.47806251831756635,
+    "macro_f1": 0.4552173361533387,
+    "classification_report": {
+      "negative": {
+        "precision": 0.6729222520107239,
+        "recall": 0.18957703927492447,
+        "f1-score": 0.2958161461402475,
+        "support": 3972.0
+      },
+      "neutral": {
+        "precision": 0.5430592827518907,
+        "recall": 0.7498736735725113,
+        "f1-score": 0.6299257163070393,
+        "support": 5937.0
+      },
+      "positive": {
+        "precision": 0.39602291877317153,
+        "recall": 0.49473684210526314,
+        "f1-score": 0.4399101460127293,
+        "support": 2375.0
+      },
+      "accuracy": 0.5193747964832303,
+      "macro avg": {
+        "precision": 0.537334817845262,
+        "recall": 0.47806251831756635,
+        "f1-score": 0.4552173361533387,
+        "support": 12284.0
+      },
+      "weighted avg": {
+        "precision": 0.5566219943642831,
+        "recall": 0.5193747964832303,
+        "f1-score": 0.48515445351385433,
+        "support": 12284.0
+      }
+    }
+  },
+  "training_majority_label": "neutral",
+  "majority_baseline_test": {
+    "accuracy": 0.4833116248778899,
+    "macro_precision": 0.16110387495929665,
+    "macro_recall": 0.3333333333333333,
+    "macro_f1": 0.217221886833873,
+    "classification_report": {
+      "negative": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 3972.0
+      },
+      "neutral": {
+        "precision": 0.4833116248778899,
+        "recall": 1.0,
+        "f1-score": 0.651665660501619,
+        "support": 5937.0
+      },
+      "positive": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2375.0
+      },
+      "accuracy": 0.4833116248778899,
+      "macro avg": {
+        "precision": 0.16110387495929665,
+        "recall": 0.3333333333333333,
+        "f1-score": 0.217221886833873,
+        "support": 12284.0
+      },
+      "weighted avg": {
+        "precision": 0.2335901267421062,
+        "recall": 0.4833116248778899,
+        "f1-score": 0.3149575892541609,
+        "support": 12284.0
+      }
+    }
+  },
+  "empty_after_cleaning_test": 0,
+  "test_cleaned_text_duplicates": 3,
+  "note": "Fixed lexicon baseline, not a newly trained NLP model. Polarity is not probability. Official supplied splits retained."
+}

@@ -1,0 +1,9 @@
+{
+  "threshold": 0.2,
+  "analyzer": "TextBlob PatternAnalyzer",
+  "label_order": [
+    "negative",
+    "neutral",
+    "positive"
+  ]
+}
